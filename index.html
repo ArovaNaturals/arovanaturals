@@ -202,30 +202,89 @@
     .fact-label { font-size:10px; font-weight:500; letter-spacing:.14em; text-transform:uppercase; color:var(--brown-soft); }
 
     /* ── PRODUCTS ── */
-    .products-section {
-      background: linear-gradient(180deg, var(--kraft) 0%, var(--forest) 100%);
-      text-align:center;
-    }
-    .products-header { margin-bottom:50px; }
-    .products-header .section-label { color:var(--gold); }
-    .products-header .section-title { color:var(--kraft); }
-    .products-header .section-title em { color:var(--gold); }
-    .products-header p { max-width:480px; margin:16px auto 0; opacity:.8; color:var(--kraft); font-size:16px; font-weight:300; line-height:1.7; }
-    .products-grid {
-      display:grid; grid-template-columns:repeat(3,1fr); gap:2px;
-      max-width:1050px; margin:0 auto 50px;
-    }
-    .product-card {
-      background:rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.08);
-      padding:42px 32px; display:flex; flex-direction:column; align-items:center; gap:16px;
-      transition:background .25s, transform .25s, border-color .25s;
-    }
-    .product-card:hover { background:rgba(30,74,43,.35); border-color:rgba(46,125,69,.4); transform:translateY(-5px); }
-    .product-icon { font-size:44px; line-height:1; }
-    .product-name { font-size:20px; font-weight:700; color:var(--kraft); }
-    .product-desc { font-size:14px; font-weight:300; line-height:1.7; color:var(--kraft); opacity:.8; }
-    .product-origin { font-size:10px; font-weight:600; letter-spacing:.18em; text-transform:uppercase; color:var(--gold); margin-top:auto; }
+.products-section {
+  background: linear-gradient(180deg, #8B5A2B 0%, #5C4033 50%, #3E2723 100%);
+  text-align: center;
+}
 
+.products-header {
+  margin-bottom: 50px;
+}
+
+.products-header .section-label {
+  color: #E6C78B; /* Warm golden beige */
+}
+
+.products-header .section-title {
+  color: #FFF8E7; /* Cream white */
+}
+
+.products-header .section-title em {
+  color: #E6C78B;
+}
+
+.products-header p {
+  max-width: 480px;
+  margin: 16px auto 0;
+  color: #F5E6D3;
+  opacity: 0.9;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  max-width: 1050px;
+  margin: 0 auto 50px;
+}
+
+.product-card {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 42px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  transition: all 0.3s ease;
+}
+
+.product-card:hover {
+  background: rgba(139, 90, 43, 0.35);
+  border-color: #D2B48C;
+  transform: translateY(-6px);
+}
+
+.product-icon {
+  font-size: 44px;
+  line-height: 1;
+}
+
+.product-name {
+  font-size: 20px;
+  font-weight: 700;
+  color: #FFF8E7;
+}
+
+.product-desc {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.7;
+  color: #F5E6D3;
+  opacity: 0.9;
+}
+
+.product-origin {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #E6C78B;
+  margin-top: auto;
+}
     /* Instagram CTA */
     .instagram-btn {
       display:inline-flex; align-items:center; gap:10px;
